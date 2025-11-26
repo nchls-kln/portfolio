@@ -29,10 +29,26 @@ body.dark {
 	color: #f5f5f5;
 }
 
+/* About Me Box */
+#about {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Dark Mode for About Me */
+body.dark #about {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+}
+
 /* Images in Achievements and Projects */
 .achievement-img,
 .project-img {
-    width: 360px;
+	width: 100%;
+    max-width: 360px;
     height: auto;
     border-radius: 10px;
     margin-top: 10px;
