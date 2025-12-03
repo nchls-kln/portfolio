@@ -55,7 +55,7 @@ body.dark #about {
     display: block;
 }
 
-/* Background Boxes for Achievements & Projects */
+/* Background Boxes for Achievements, Projects, Course Assessment */
 #achievements, 
 #projects,
 #course-assessment {
@@ -68,7 +68,7 @@ body.dark #about {
 
 /* Dark mode background box */
 body.dark #achievements,
-body.dark #projects.
+body.dark #projects,
 body.dark #course-assessment {
     background-color: #1e1e1e; 
     box-shadow: 0 4px 10px rgba(255,255,255,0.1);
