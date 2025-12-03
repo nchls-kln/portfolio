@@ -46,7 +46,8 @@ body.dark #about {
 
 /* Images in Achievements and Projects */
 .achievement-img,
-.project-img {
+.project-img,
+.course-assessment-img {
 	width: 100%;
     max-width: 360px;
     height: auto;
@@ -57,7 +58,8 @@ body.dark #about {
 
 /* Background Boxes for Achievements & Projects */
 #achievements, 
-#projects {
+#projects,
+#course-assessment {
     background-color: #ffffff; 
     padding: 20px;
     border-radius: 12px;
@@ -67,7 +69,8 @@ body.dark #about {
 
 /* Dark mode background box */
 body.dark #achievements,
-body.dark #projects {
+body.dark #projects.
+body.dark #course-assessment {
     background-color: #1e1e1e; 
     box-shadow: 0 4px 10px rgba(255,255,255,0.1);
 }
