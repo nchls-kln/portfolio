@@ -46,8 +46,7 @@ body.dark #about {
 
 /* Images in Achievements and Projects */
 .achievement-img,
-.project-img,
-.course-assessment-img {
+.project-img {
 	width: 100%;
     max-width: 360px;
     height: auto;
