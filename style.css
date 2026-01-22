@@ -1,131 +1,174 @@
-/* RESET */
+/* Base */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
-/* LIGHT THEME */
 body {
-  font-family: "Inter", Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #2b2b2b;
-  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 20px;
 }
 
-/* CONTAINER */
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-/* HEADER */
-.profile {
+/* Header */
+header {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
-.profile img {
-  width: 140px;
-  height: 140px;
+#profile-img {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin: 12px 0;
 }
 
-.profile h1 {
-  font-size: 1.9rem;
-  font-weight: 600;
-}
-
-.subtitle {
+#course-year {
   color: #666;
-  margin-top: 5px;
 }
 
-/* BUTTON */
+/* Button */
 button {
-  margin-top: 20px;
   padding: 10px 22px;
-  border: 1px solid #ccc;
-  background: transparent;
-  color: #333;
-  border-radius: 6px;
+  margin-top: 12px;
+  border-radius: 999px;
+  border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
+  background: #e0e0e0;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 
 button:hover {
-  background-color: #e0e0e0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
 
-/* CARD SECTIONS */
+/* Sections */
+section h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
 .card {
-  background-color: #ffffff;
-  padding: 25px;
-  border-radius: 14px;
-  margin-bottom: 30px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  width: 300px;
+  height: 260px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.card h2 {
-  margin-bottom: 15px;
-  font-size: 1.4rem;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 8px;
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
 
-/* LISTS */
-.item-list {
-  list-style: none;
-}
-
-.item-list li {
-  margin-bottom: 25px;
-}
-
-.item-list p {
-  margin-bottom: 10px;
-  font-weight: 500;
-}
-
-/* IMAGES */
-.item-list img {
+.card-img {
   width: 100%;
-  max-width: 360px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+  height: calc(100% - 56px);
+  object-fit: cover;
 }
 
-.item-list img:hover {
-  transform: scale(1.02);
+.card-label {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  padding: 0 10px;
+  text-align: center;
 }
 
-/* DARK MODE */
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.lightbox-panel img {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 8px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  width: 36px;
+  height: 36px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.socials-inner {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social-link {
+  text-decoration: none;
+  color: inherit;
+  background: rgba(0,0,0,0.05);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* Dark Mode */
 body.dark {
   background-color: #121212;
-  color: #e5e5e5;
+  color: #f5f5f5;
 }
 
 body.dark .card {
-  background-color: #1e1e1e;
-  box-shadow: 0 8px 20px rgba(255,255,255,0.05);
-}
-
-body.dark .subtitle {
-  color: #aaa;
+  background: #1e1e1e;
 }
 
 body.dark button {
-  border-color: #555;
-  color: #e5e5e5;
+  background: #2a2a2a;
+  color: #f5f5f5;
 }
 
-body.dark button:hover {
-  background-color: #2a2a2a;
-}
-
-body.dark .card h2 {
-  border-bottom-color: #333;
+body.dark .social-link {
+  background: rgba(255,255,255,0.06);
 }
