@@ -5,7 +5,7 @@ toggleButton.addEventListener("click", () => {
   body.classList.toggle("dark");
 });
 
-/* Lightbox */
+// Lightbox
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
 const closeBtn = document.getElementById("lightbox-close");
@@ -18,11 +18,6 @@ document.querySelectorAll(".achievement-card").forEach(card => {
   });
 });
 
-document.querySelectorAll(".project-card").forEach(card => {
-  card.addEventListener("click", () => {
-    window.open(card.dataset.href, "_blank");
-  });
-});
-
 closeBtn.addEventListener("click", () => lightbox.classList.remove("open"));
 backdrop.addEventListener("click", () => lightbox.classList.remove("open"));
+document.addEventListener("keydown", e => { if(e.key==="Escape") lightbox.classList.remove("open"); });
