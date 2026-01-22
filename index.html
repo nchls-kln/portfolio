@@ -1,58 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Student Portfolio</title>
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-      <header>
-         <h1 id="name">Nicholas Klein Castillanes</h1>
-         <img src="images/profile.jpg" alt="Profile Picture" id="profile-img">
-         <p id="course-year">Computer Science - 2nd Year</p>
-         <button id="theme-toggle">Switch Theme</button>
-      </header>
-      <section id="about">
-         <h2>About Me</h2>
-         <p>
-         Hi! I'm Nicholas Klein Castillanes, a 2nd-year Computer Science student.
-         I'm passionate about philosophy, building personal projects, and constantly learning new things.
-         </p>
-      </section>
-      <section id="achievements">
-         <h2>Achievements/Certifications</h2>
-         <ul>
-            <li>IT Specialist Certificate in Java <br>
-            <img src="images/java-cert.png" alt="Java Certificate" class="achievement-img">
-            </li>
-         </ul>
-      </section>
-      <section id="projects">
-         <h2>Previous Projects</h2>
-         <ul>
-            <li>MapuFind: MMCM Lost and Found Management System <br>
-            <img src="images/mapufind-preview.jpg" alt="MapuFind Project Preview" class="project-img">
-            </li>
-         </ul>
-      </section>
-      <section id="course-assessment">
-         <h2>Course Assessment</h2>
-         <ul>
-            <li>
-               FreshSense: The new way to protect mushroom farms using the power of smell. <br>
-               <a href="https://nchls-kln.github.io/FreshSense/home.html" target="_blank">
-                  <img src="images/fresh-sense.png" alt="FreshSense Project Preview" class="project-img">
-               </a>
-            </li>
-            <li>
-               Javascript MPs: An introductory activity that focuses on learning the fundamentals of client-side JavaScript. <br>
-               <a href="https://nchls-kln.github.io/JavascriptMPs/" target="_blank">
-                  <img src="images/javascript-mps.png" alt="JavascriptMPs Project Preview" class="project-img">
-               </a>
-            </li>
-         </ul>
-      </section>
-      <script src="script.js"></script>
-   </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicholas Klein Castillanes | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="container">
+
+    <!-- Header -->
+    <header class="hero">
+      <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
+      <h1>Nicholas Klein Castillanes</h1>
+      <p class="subtitle">Computer Science · 2nd Year</p>
+      <button id="theme-toggle" class="btn">Switch Theme</button>
+    </header>
+
+    <!-- About -->
+    <section class="card">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Nicholas Klein Castillanes, a 2nd-year Computer Science student.
+        I’m passionate about philosophy, building meaningful projects, and
+        continuously improving my technical and personal skills.
+      </p>
+    </section>
+
+    <!-- Achievements -->
+    <section class="card">
+      <h2>Achievements & Certifications</h2>
+      <div class="item">
+        <p><strong>IT Specialist Certificate in Java</strong></p>
+        <img src="images/java-cert.png" alt="Java Certificate" class="media">
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="card">
+      <h2>Projects</h2>
+      <div class="item">
+        <p><strong>MapuFind</strong> – MMCM Lost and Found Management System</p>
+        <img src="images/mapufind-preview.jpg" alt="MapuFind Preview" class="media">
+      </div>
+    </section>
+
+    <!-- Course Assessment -->
+    <section class="card">
+      <h2>Course Assessments</h2>
+
+      <div class="item">
+        <p><strong>FreshSense</strong> – Smart mushroom farm protection system</p>
+        <a href="https://nchls-kln.github.io/FreshSense/home.html" target="_blank">
+          <img src="images/fresh-sense.png" alt="FreshSense Preview" class="media">
+        </a>
+      </div>
+
+      <div class="item">
+        <p><strong>JavaScript MPs</strong> – Client-side JavaScript fundamentals</p>
+        <a href="https://nchls-kln.github.io/JavascriptMPs/" target="_blank">
+          <img src="images/javascript-mps.png" alt="JavaScript MPs Preview" class="media">
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>
