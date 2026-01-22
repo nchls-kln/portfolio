@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nicholas Klein Castillanes Portfolio</title>
+  <title>Student Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,21 @@
     <h1 id="name">Nicholas Klein Castillanes</h1>
     <img src="images/profile.jpg" alt="Profile Picture" id="profile-img">
     <p id="course-year">BS in Computer Science · 2nd Year</p>
-    <button id="theme-toggle">Switch Theme</button>
+
+    <!-- Header Controls -->
+    <div class="header-controls">
+        <!-- Theme Toggle -->
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch">
+            <label for="theme-switch" class="toggle-label">
+                <span class="toggle-ball"></span>
+            </label>
+        </div>
+
+        <!-- Section Buttons -->
+        <a href="#projects" class="btn section-btn">Projects</a>
+        <a href="#achievements" class="btn section-btn">Achievements</a>
+    </div>
   </header>
 
   <!-- About Me -->
@@ -26,9 +40,12 @@
   <section id="achievements">
     <h2>Achievements & Certifications</h2>
     <div class="cards">
-      <article class="card achievement-card" data-img="images/java-cert.png">
+      <article class="card achievement-card">
         <img src="images/java-cert.png" alt="Java Certificate" class="card-img">
         <div class="card-label">IT Specialist — Java</div>
+        <div class="card-buttons">
+          <a href="images/java-cert.png" target="_blank" class="btn">View Certificate</a>
+        </div>
       </article>
     </div>
   </section>
@@ -38,47 +55,71 @@
     <h2>Projects</h2>
     <div class="cards">
       <article class="card project-card">
-        <img src="images/mapufind-preview.jpg" alt="MapuFind Preview" class="card-img">
+        <img src="images/Projects/mapufind-preview.jpg" alt="MapuFind Preview" class="card-img">
         <div class="card-label">MapuFind — Lost & Found System</div>
-        <div class="card-buttons">
-          <a href="https://github.com/nchls-kln/restapi-pokedemo-castillanes" target="_blank" class="btn">View Repository</a>
-        </div>
       </article>
 
       <article class="card project-card">
-        <img src="images/fresh-sense.png" alt="FreshSense Preview" class="card-img">
+        <img src="images/Projects/fresh-sense.png" alt="FreshSense Preview" class="card-img">
         <div class="card-label">FreshSense — Course Assessment</div>
         <div class="card-buttons">
           <a href="https://nchls-kln.github.io/FreshSense/home.html" target="_blank" class="btn">Visit Live</a>
           <a href="https://github.com/nchls-kln/FreshSense" target="_blank" class="btn">View Repository</a>
         </div>
       </article>
+
+      <article class="card project-card">
+        <img src="images/Projects/javascript-mps.png" alt="JavaScript MPS Preview" class="card-img">
+        <div class="card-label">JS MPS — Course Assessment</div>
+        <div class="card-buttons">
+          <a href="https://nchls-kln.github.io/JavascriptMPs/" target="_blank" class="btn">Visit Live</a>
+          <a href="https://github.com/nchls-kln/JavascriptMPs" target="_blank" class="btn">View Repository</a>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <img src="images/Projects/webapp-demo.png" alt="WebApp Demo Preview" class="card-img">
+        <div class="card-label">WebApp Demo — Course Assessment</div>
+        <div class="card-buttons">
+          <a href="https://castillanes-webapp-demo.vercel.app/" target="_blank" class="btn">Visit Live</a>
+          <a href="https://github.com/nchls-kln/castillanes-webapp-demo" target="_blank" class="btn">View Repository</a>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <img src="images/Projects/the-cozy-corner.png" alt="The Cozy Corner Preview" class="card-img">
+        <div class="card-label">The Cozy Corner — Course Assessment</div>
+        <div class="card-buttons">
+          <a href="https://thecozycornerbycastillanes.vercel.app/" target="_blank" class="btn">Visit Live</a>
+          <a href="https://github.com/nchls-kln/thecozycornerbycastillanes" target="_blank" class="btn">View Repository</a>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <img src="images/Projects/pokemon-dashboard.png" alt="Pokemon Dashboard Preview" class="card-img">
+        <div class="card-label">Pokemon Dashboard — Course Assessment</div>
+        <div class="card-buttons">
+          <a href="https://restapi-pokedemo-castillanes.vercel.app/" target="_blank" class="btn">Visit Live</a>
+          <a href="https://github.com/nchls-kln/restapi-pokedemo-castillanes" target="_blank" class="btn">View Repository</a>
+        </div>
+      </article>
     </div>
   </section>
-
-  <!-- Lightbox -->
-  <div id="lightbox" class="lightbox" aria-hidden="true">
-    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
-    <div class="lightbox-panel" role="dialog" aria-modal="true">
-      <button id="lightbox-close" class="lightbox-close">×</button>
-      <img id="lightbox-img" src="" alt="Preview">
-    </div>
-  </div>
 
   <!-- Footer -->
   <footer class="socials">
     <div class="socials-inner">
       <a class="social-link" href="https://github.com/nchls-kln" target="_blank" aria-label="GitHub">
-        <img src="images/github.svg" alt="GitHub Logo" class="social-icon">
+        <img src="images/SocialsLogos/github.svg" alt="GitHub Logo" class="social-icon">
       </a>
-      <a class="social-link" href="https://www.linkedin.com/in/your-linkedin/" target="_blank" aria-label="LinkedIn">
-        <img src="images/linkedin.svg" alt="LinkedIn Logo" class="social-icon">
+      <a class="social-link" href="https://www.linkedin.com/in/nicholas-klein-castillanes-475482333/" target="_blank" aria-label="LinkedIn">
+        <img src="images/SocialsLogos/linkedin.svg" alt="LinkedIn Logo" class="social-icon">
       </a>
-      <a class="social-link" href="https://www.instagram.com/your-instagram/" target="_blank" aria-label="Instagram">
-        <img src="images/instagram.svg" alt="Instagram Logo" class="social-icon">
+      <a class="social-link" href="https://www.instagram.com/nchls.kln/" target="_blank" aria-label="Instagram">
+        <img src="images/SocialsLogos/instagram.svg" alt="Instagram Logo" class="social-icon">
       </a>
-      <a class="social-link" href="mailto:your.email@example.com" aria-label="Email">
-        <img src="images/email.svg" alt="Email Icon" class="social-icon">
+      <a class="social-link email-link" href="mailto:kleincastillanes07@gmail.com">
+        kleincastillanes07@gmail.com
       </a>
     </div>
   </footer>
