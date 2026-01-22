@@ -3,79 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nicholas Klein Castillanes | Portfolio</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Student Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <main class="container">
-
-    <!-- Hero -->
-    <header class="hero">
-      <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
+  <header class="container">
+    <div class="profile">
+      <img src="images/profile.jpg" alt="Profile Picture" />
       <h1>Nicholas Klein Castillanes</h1>
       <p class="subtitle">Computer Science · 2nd Year</p>
+      <button id="theme-toggle">Switch Theme</button>
+    </div>
+  </header>
 
-      <div class="social-links">
-        <a href="https://github.com/nchls-kln" target="_blank">GitHub</a>
-        <a href="https://instagram.com/" target="_blank">Instagram</a>
-        <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
-      </div>
-
-      <button id="theme-toggle" class="btn">Switch Theme</button>
-    </header>
-
-    <!-- About -->
-    <section class="text-section">
+  <main class="container">
+    <section class="card">
       <h2>About Me</h2>
       <p>
-        Hi! I'm Nicholas Klein Castillanes, a 2nd-year Computer Science student.
-        I’m interested in philosophy, system design, and building thoughtful
-        projects while continuously improving my technical foundation.
+        I’m a second-year Computer Science student with a strong interest in
+        philosophy, system design, and building meaningful personal projects.
+        I value continuous learning and thoughtful problem-solving.
       </p>
     </section>
 
-    <!-- Achievements -->
-    <section class="text-section">
+    <section class="card">
       <h2>Achievements & Certifications</h2>
-      <p><strong>IT Specialist Certificate in Java</strong></p>
-      <img src="images/java-cert.png" alt="Java Certificate" class="media">
+      <ul class="item-list">
+        <li>
+          <p>IT Specialist Certificate in Java</p>
+          <img src="images/java-cert.png" alt="Java Certificate" />
+        </li>
+      </ul>
     </section>
 
-    <!-- Projects -->
-    <section>
-      <h2 class="section-title">Projects</h2>
-
-      <div class="floating-card">
-        <p><strong>MapuFind</strong></p>
-        <p class="muted">MMCM Lost and Found Management System</p>
-        <img src="images/mapufind-preview.jpg" alt="MapuFind Preview" class="media">
-      </div>
+    <section class="card">
+      <h2>Previous Projects</h2>
+      <ul class="item-list">
+        <li>
+          <p>MapuFind — Lost and Found Management System</p>
+          <img src="images/mapufind-preview.jpg" alt="MapuFind Preview" />
+        </li>
+      </ul>
     </section>
 
-    <!-- Course Assessments -->
-    <section>
-      <h2 class="section-title">Course Assessments</h2>
+    <section class="card">
+      <h2>Course Assessments</h2>
+      <ul class="item-list">
+        <li>
+          <p>
+            FreshSense — Smart odor-based protection system for mushroom farms
+          </p>
+          <a href="https://nchls-kln.github.io/FreshSense/home.html" target="_blank">
+            <img src="images/fresh-sense.png" alt="FreshSense Preview" />
+          </a>
+        </li>
 
-      <div class="floating-card">
-        <p><strong>FreshSense</strong></p>
-        <p class="muted">Smart mushroom farm protection system</p>
-        <a href="https://nchls-kln.github.io/FreshSense/home.html" target="_blank">
-          <img src="images/fresh-sense.png" alt="FreshSense Preview" class="media">
-        </a>
-      </div>
-
-      <div class="floating-card">
-        <p><strong>JavaScript MPs</strong></p>
-        <p class="muted">Client-side JavaScript fundamentals</p>
-        <a href="https://nchls-kln.github.io/JavascriptMPs/" target="_blank">
-          <img src="images/javascript-mps.png" alt="JavaScript MPs Preview" class="media">
-        </a>
-      </div>
+        <li>
+          <p>
+            JavaScript MPs — Fundamentals of client-side JavaScript
+          </p>
+          <a href="https://nchls-kln.github.io/JavascriptMPs/" target="_blank">
+            <img src="images/javascript-mps.png" alt="JavaScript MPs Preview" />
+          </a>
+        </li>
+      </ul>
     </section>
-
   </main>
 
   <script src="script.js"></script>
