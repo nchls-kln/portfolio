@@ -1,75 +1,122 @@
-/* Default Light Theme */
+/* Root Variables */
+:root {
+  --bg-light: #f5f6f8;
+  --bg-dark: #121212;
+  --card-light: #ffffff;
+  --card-dark: #1e1e1e;
+  --text-light: #333;
+  --text-dark: #f5f5f5;
+  --accent: #3b82f6;
+}
+
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
 body {
-	font-family: Arial, sans-serif;
-	background-color: #f5f5f5;
-	color: #333;
-	margin: 0;
-	padding: 20px;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  line-height: 1.6;
 }
 
-header {
-	text-align: center;
-	margin-bottom: 30px;
-}
-
-#profile-img {
-	width: 150px;
-	border-radius: 50%;
-}
-
-button {
-	padding: 10px 20px;
-	margin-top: 10px;
-	cursor: pointer;
-}
-
-/* Dark Theme */
+/* Dark mode */
 body.dark {
-	background-color: #121212;
-	color: #f5f5f5;
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
 }
 
-/* About Me Box */
-#about {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+/* Layout */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
 }
 
-/* Dark Mode for About Me */
-body.dark #about {
-    background-color: #1e1e1e;
-    box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-/* Images in Achievements and Projects */
-.achievement-img,
-.project-img {
-	width: 100%;
-    max-width: 360px;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 10px;
-    display: block;
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid var(--accent);
 }
 
-/* Background Boxes for Achievements, Projects, Course Assessment */
-#achievements, 
-#projects,
-#course-assessment {
-    background-color: #ffffff; 
-    padding: 20px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.hero h1 {
+  font-size: 2rem;
+  margin: 10px 0;
 }
 
-/* Dark mode background box */
-body.dark #achievements,
-body.dark #projects,
-body.dark #course-assessment {
-    background-color: #1e1e1e; 
-    box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+.subtitle {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+body.dark .subtitle {
+  color: #aaa;
+}
+
+/* Button */
+.btn {
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Cards */
+.card {
+  background-color: var(--card-light);
+  padding: 25px;
+  border-radius: 14px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+body.dark .card {
+  background-color: var(--card-dark);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.05);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+/* Items */
+.item {
+  margin-bottom: 25px;
+}
+
+.item p {
+  margin-bottom: 10px;
+}
+
+/* Images */
+.media {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.media:hover {
+  transform: scale(1.02);
 }
