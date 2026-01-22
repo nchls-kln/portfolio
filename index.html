@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Student Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicholas Klein Castillanes Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <header>
     <h1 id="name">Nicholas Klein Castillanes</h1>
@@ -15,6 +14,15 @@
     <button id="theme-toggle">Switch Theme</button>
   </header>
 
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a 2nd-year Computer Science student passionate about building web applications, learning new technologies, and problem-solving. My skills include Java, JavaScript, HTML, CSS, and database management. I enjoy creating practical projects that make an impact.
+    </p>
+  </section>
+
+  <!-- Achievements -->
   <section id="achievements">
     <h2>Achievements & Certifications</h2>
     <div class="cards">
@@ -25,24 +33,30 @@
     </div>
   </section>
 
+  <!-- Projects -->
   <section id="projects">
     <h2>Projects</h2>
     <div class="cards">
-      <article class="card project-card"
-        data-href="https://github.com/nchls-kln/restapi-pokedemo-castillanes">
+      <article class="card project-card">
         <img src="images/mapufind-preview.jpg" alt="MapuFind Preview" class="card-img">
         <div class="card-label">MapuFind — Lost & Found System</div>
+        <div class="card-buttons">
+          <a href="https://github.com/nchls-kln/restapi-pokedemo-castillanes" target="_blank" class="btn">View Repository</a>
+        </div>
       </article>
 
-      <article class="card project-card"
-        data-href="https://nchls-kln.github.io/FreshSense/home.html">
+      <article class="card project-card">
         <img src="images/fresh-sense.png" alt="FreshSense Preview" class="card-img">
         <div class="card-label">FreshSense — Course Assessment</div>
+        <div class="card-buttons">
+          <a href="https://nchls-kln.github.io/FreshSense/home.html" target="_blank" class="btn">Visit Live</a>
+          <a href="https://github.com/nchls-kln/FreshSense" target="_blank" class="btn">View Repository</a>
+        </div>
       </article>
     </div>
   </section>
 
-  <!-- LIGHTBOX -->
+  <!-- Lightbox -->
   <div id="lightbox" class="lightbox" aria-hidden="true">
     <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
     <div class="lightbox-panel" role="dialog" aria-modal="true">
@@ -51,13 +65,20 @@
     </div>
   </div>
 
+  <!-- Footer -->
   <footer class="socials">
     <div class="socials-inner">
-      <a class="social-link" href="https://github.com/nchls-kln" target="_blank">
-        GitHub
+      <a class="social-link" href="https://github.com/nchls-kln" target="_blank" aria-label="GitHub">
+        <img src="images/github.svg" alt="GitHub Logo" class="social-icon">
       </a>
-      <a class="social-link" href="mailto:your.email@example.com">
-        Email
+      <a class="social-link" href="https://www.linkedin.com/in/your-linkedin/" target="_blank" aria-label="LinkedIn">
+        <img src="images/linkedin.svg" alt="LinkedIn Logo" class="social-icon">
+      </a>
+      <a class="social-link" href="https://www.instagram.com/your-instagram/" target="_blank" aria-label="Instagram">
+        <img src="images/instagram.svg" alt="Instagram Logo" class="social-icon">
+      </a>
+      <a class="social-link" href="mailto:your.email@example.com" aria-label="Email">
+        <img src="images/email.svg" alt="Email Icon" class="social-icon">
       </a>
     </div>
   </footer>
