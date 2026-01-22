@@ -5,64 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nicholas Klein Castillanes | Portfolio</title>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <main class="container">
 
-    <!-- Header -->
+    <!-- Hero -->
     <header class="hero">
       <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
       <h1>Nicholas Klein Castillanes</h1>
       <p class="subtitle">Computer Science · 2nd Year</p>
+
+      <div class="social-links">
+        <a href="https://github.com/nchls-kln" target="_blank">GitHub</a>
+        <a href="https://instagram.com/" target="_blank">Instagram</a>
+        <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+      </div>
+
       <button id="theme-toggle" class="btn">Switch Theme</button>
     </header>
 
     <!-- About -->
-    <section class="card">
+    <section class="text-section">
       <h2>About Me</h2>
       <p>
         Hi! I'm Nicholas Klein Castillanes, a 2nd-year Computer Science student.
-        I’m passionate about philosophy, building meaningful projects, and
-        continuously improving my technical and personal skills.
+        I’m interested in philosophy, system design, and building thoughtful
+        projects while continuously improving my technical foundation.
       </p>
     </section>
 
     <!-- Achievements -->
-    <section class="card">
+    <section class="text-section">
       <h2>Achievements & Certifications</h2>
-      <div class="item">
-        <p><strong>IT Specialist Certificate in Java</strong></p>
-        <img src="images/java-cert.png" alt="Java Certificate" class="media">
-      </div>
+      <p><strong>IT Specialist Certificate in Java</strong></p>
+      <img src="images/java-cert.png" alt="Java Certificate" class="media">
     </section>
 
     <!-- Projects -->
-    <section class="card">
-      <h2>Projects</h2>
-      <div class="item">
-        <p><strong>MapuFind</strong> – MMCM Lost and Found Management System</p>
+    <section>
+      <h2 class="section-title">Projects</h2>
+
+      <div class="floating-card">
+        <p><strong>MapuFind</strong></p>
+        <p class="muted">MMCM Lost and Found Management System</p>
         <img src="images/mapufind-preview.jpg" alt="MapuFind Preview" class="media">
       </div>
     </section>
 
-    <!-- Course Assessment -->
-    <section class="card">
-      <h2>Course Assessments</h2>
+    <!-- Course Assessments -->
+    <section>
+      <h2 class="section-title">Course Assessments</h2>
 
-      <div class="item">
-        <p><strong>FreshSense</strong> – Smart mushroom farm protection system</p>
+      <div class="floating-card">
+        <p><strong>FreshSense</strong></p>
+        <p class="muted">Smart mushroom farm protection system</p>
         <a href="https://nchls-kln.github.io/FreshSense/home.html" target="_blank">
           <img src="images/fresh-sense.png" alt="FreshSense Preview" class="media">
         </a>
       </div>
 
-      <div class="item">
-        <p><strong>JavaScript MPs</strong> – Client-side JavaScript fundamentals</p>
+      <div class="floating-card">
+        <p><strong>JavaScript MPs</strong></p>
+        <p class="muted">Client-side JavaScript fundamentals</p>
         <a href="https://nchls-kln.github.io/JavascriptMPs/" target="_blank">
           <img src="images/javascript-mps.png" alt="JavaScript MPs Preview" class="media">
         </a>
