@@ -3,138 +3,267 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Portfolio</title>
+  <title>Nicholas Klein Castillanes - Portfolio</title>
   <link rel="stylesheet" href="style.css">
-
-  <!-- Favicon -->
-  <link rel="icon" href="images/profile.jpg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/enkei-logo.png" type="image/x-icon">
 </head>
 <body>
-  <header>
-    <h1 id="name">Nicholas Klein Castillanes</h1>
-    <img src="images/profile.jpg" alt="Profile Picture" id="profile-img">
-    <p id="course-year">BS in Computer Science · 2nd Year</p>
-
-    <!-- Header Controls -->
-    <div class="header-controls">
-        <!-- Theme Toggle -->
-        <div class="theme-toggle">
-            <input type="checkbox" id="theme-switch">
-            <label for="theme-switch" class="toggle-label">
-                <span class="toggle-ball"></span>
-            </label>
+  <div class="container">
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav-content">
+        <div class="nav-brand">
+          <img src="images/enkei-logo.png" alt="enkei logo" class="nav-logo invert-on-dark"> 
         </div>
-
-        <!-- Section Buttons -->
-        <a href="#achievements" class="btn section-btn">Achievements</a>
-        <a href="#projects" class="btn section-btn">Projects</a>
-    </div>
-  </header>
-
-  <!-- About Me -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a 2nd-year Computer Science student passionate about building web applications, learning new technologies, and problem-solving. My skills include Java, JavaScript, HTML, CSS, and database management. I enjoy creating practical projects that make an impact.
-    </p>
-  </section>
-
-  <!-- Achievements -->
-  <section id="achievements">
-    <h2>Achievements & Certifications</h2>
-    <div class="cards">
-      <article class="card achievement-card">
-        <img src="images/java-cert.png" alt="Java Certificate" class="card-img">
-        <div class="card-label">IT Specialist — Java</div>
-        <div class="card-buttons">
-          <a href="images/java-cert.png" target="_blank" class="btn">View Certificate</a>
+        <div class="nav-links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#achievements" class="nav-link">Achievements</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
         </div>
-      </article>
-    </div>
-  </section>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-icon">☀️</span>
+        </button>
+      </div>
+    </nav>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="cards">
-      <article class="card project-card">
-        <img src="images/Projects/mapufind-preview.jpg" alt="MapuFind Preview" class="card-img">
-        <div class="card-label">MapuFind — Lost & Found System</div>
-      </article>
-
-      <article class="card project-card">
-        <img src="images/Projects/fresh-sense.png" alt="FreshSense Preview" class="card-img">
-        <div class="card-label">FreshSense — Course Assessment</div>
-        <div class="card-buttons">
-          <a href="https://nchls-kln.github.io/FreshSense/home.html" target="_blank" class="btn">Visit Live</a>
-          <a href="https://github.com/nchls-kln/FreshSense" target="_blank" class="btn">View Repository</a>
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="images/profile.jpg" alt="Nicholas Klein Castillanes" class="profile-image">
         </div>
-      </article>
-
-      <article class="card project-card">
-        <img src="images/Projects/javascript-mps.png" alt="JavaScript MPS Preview" class="card-img">
-        <div class="card-label">JS MPS — Course Assessment</div>
-        <div class="card-buttons">
-          <a href="https://nchls-kln.github.io/JavascriptMPs/" target="_blank" class="btn">Visit Live</a>
-          <a href="https://github.com/nchls-kln/JavascriptMPs" target="_blank" class="btn">View Repository</a>
+        <div class="hero-text">
+          <h1 class="hero-title">Nicholas Klein Castillanes</h1>
+          <p class="hero-subtitle">BS Computer Science Student</p>
+          <p class="hero-description">
+            Passionate about creating innovative web applications and solving complex problems through code.
+            Currently pursuing my degree while building practical projects that make a real impact.
+          </p>
         </div>
-      </article>
+      </div>
+    </header>
 
-      <article class="card project-card">
-        <img src="images/Projects/webapp-demo.png" alt="WebApp Demo Preview" class="card-img">
-        <div class="card-label">WebApp Demo — Course Assessment</div>
-        <div class="card-buttons">
-          <a href="https://castillanes-webapp-demo.vercel.app/" target="_blank" class="btn">Visit Live</a>
-          <a href="https://github.com/nchls-kln/castillanes-webapp-demo" target="_blank" class="btn">View Repository</a>
+    <hr>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="section-container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I am a dedicated Computer Science student with a passion for web development and problem-solving.
+              My journey in technology began with a curiosity about how things work, and it has evolved into
+              a commitment to creating meaningful digital experiences.
+            </p>
+            <p>
+              I specialize in full-stack web development, with expertise in JavaScript, HTML, CSS, and modern
+              frameworks. I'm always eager to learn new technologies and tackle challenging projects that
+              push my boundaries.
+            </p>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">HTML & CSS</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Java</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Database Management</span>
+            </div>
+          </div>
         </div>
-      </article>
+      </div>
+    </section>
 
-      <article class="card project-card">
-        <img src="images/Projects/the-cozy-corner.png" alt="The Cozy Corner Preview" class="card-img">
-        <div class="card-label">The Cozy Corner — Course Assessment</div>
-        <div class="card-buttons">
-          <a href="https://thecozycornerbycastillanes.vercel.app/" target="_blank" class="btn">Visit Live</a>
-          <a href="https://github.com/nchls-kln/thecozycornerbycastillanes" target="_blank" class="btn">View Repository</a>
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+      <div class="section-container">
+        <h2 class="section-title">Achievements & Certifications</h2>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <img src="images/java-cert.png" alt="Java Certificate" class="cert-image">
+            </div>
+            <div class="achievement-content">
+              <h3 class="achievement-title">IT Specialist — Java</h3>
+              <p class="achievement-description">IBM Certified Specialist in Java programming fundamentals</p>
+              <a href="images/java-cert.png" target="_blank" class="achievement-link">View Certificate →</a>
+            </div>
+          </div>
         </div>
-      </article>
+      </div>
+    </section>
 
-      <article class="card project-card">
-        <img src="images/Projects/pokemon-dashboard.png" alt="Pokemon Dashboard Preview" class="card-img">
-        <div class="card-label">Pokemon Dashboard — Course Assessment</div>
-        <div class="card-buttons">
-          <a href="https://restapi-pokedemo-castillanes.vercel.app/" target="_blank" class="btn">Visit Live</a>
-          <a href="https://github.com/nchls-kln/restapi-pokedemo-castillanes" target="_blank" class="btn">View Repository</a>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="section-container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/Projects/mapufind-preview.jpg" alt="MapuFind Preview" class="project-img">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">MapuFind</h3>
+              <p class="project-description">A comprehensive lost & found system designed to help communities recover lost items efficiently.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Web App</span>
+                <span class="tech-tag">Frontend</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/Projects/fresh-sense.png" alt="FreshSense Preview" class="project-img">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">FreshSense</h3>
+              <p class="project-description">An intuitive course assessment platform for educational institutions.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Web App</span>
+                <span class="tech-tag">Frontend</span>
+              </div>
+              <div class="project-links">
+                <a href="https://nchls-kln.github.io/FreshSense/home.html" target="_blank" class="project-link">Live Demo</a>
+                <a href="https://github.com/nchls-kln/FreshSense" target="_blank" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/Projects/javascript-mps.png" alt="JavaScript MPS Preview" class="project-img">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">JavaScript MPS</h3>
+              <p class="project-description">A comprehensive JavaScript learning platform with interactive exercises and assessments.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Educational</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://nchls-kln.github.io/JavascriptMPs/" target="_blank" class="project-link">Live Demo</a>
+                <a href="https://github.com/nchls-kln/JavascriptMPs" target="_blank" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/Projects/webapp-demo.png" alt="WebApp Demo Preview" class="project-img">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">WebApp Demo</h3>
+              <p class="project-description">A demonstration of modern web application architecture and best practices.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Demo</span>
+                <span class="tech-tag">Frontend</span>
+              </div>
+              <div class="project-links">
+                <a href="https://castillanes-webapp-demo.vercel.app/" target="_blank" class="project-link">Live Demo</a>
+                <a href="https://github.com/nchls-kln/castillanes-webapp-demo" target="_blank" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/Projects/the-cozy-corner.png" alt="The Cozy Corner Preview" class="project-img">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">The Cozy Corner</h3>
+              <p class="project-description">A warm and inviting web experience showcasing creative design and user experience principles.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Design</span>
+                <span class="tech-tag">Frontend</span>
+              </div>
+              <div class="project-links">
+                <a href="https://thecozycornerbycastillanes.vercel.app/" target="_blank" class="project-link">Live Demo</a>
+                <a href="https://github.com/nchls-kln/thecozycornerbycastillanes" target="_blank" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/Projects/pokemon-dashboard.png" alt="Pokemon Dashboard Preview" class="project-img">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Pokemon Dashboard</h3>
+              <p class="project-description">An interactive dashboard showcasing REST API integration and data visualization.</p>
+              <div class="project-tech">
+                <span class="tech-tag">API</span>
+                <span class="tech-tag">Dashboard</span>
+              </div>
+              <div class="project-links">
+                <a href="https://restapi-pokedemo-castillanes.vercel.app/" target="_blank" class="project-link">Live Demo</a>
+                <a href="https://github.com/nchls-kln/restapi-pokedemo-castillanes" target="_blank" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/Projects/literary-compass.png" alt="Literary Compass Preview" class="project-img">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Literary Compass</h3>
+              <p class="project-description">A literary exploration platform helping readers discover new books and authors.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Web App</span>
+                <span class="tech-tag">Literature</span>
+              </div>
+              <div class="project-links">
+                <a href="https://literary-compass-roan.vercel.app" target="_blank" class="project-link">Live Demo</a>
+                <a href="https://github.com/nchls-kln/literary-compass" target="_blank" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </article>
         </div>
-      </article>
+      </div>
+    </section>
 
-      <article class="card project-card">
-        <img src="images/Projects/literary-compass.png" alt="Literary Compass Preview" class="card-img">
-        <div class="card-label">Literary Compass — Course Assessment</div>
-        <div class="card-buttons">
-          <a href="https://literary-compass-roan.vercel.app" target="_blank" class="btn">Visit Live</a>
-          <a href="https://github.com/nchls-kln/literary-compass" target="_blank" class="btn">View Repository</a>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="section-container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <p class="contact-description">
+            I'm always interested in new opportunities and collaborations.
+            Feel free to reach out if you'd like to work together or just say hello!
+          </p>
+          <div class="contact-links">
+            <a href="mailto:kleincastillanes07@gmail.com" class="contact-link email">
+              <span class="contact-icon invert-on-dark">✉️</span>
+              <span>kleincastillanes07@gmail.com</span>
+            </a>
+            <a href="https://github.com/nchls-kln" target="_blank" class="contact-link">
+              <img src="images/SocialsLogos/github.svg" alt="GitHub" class="contact-icon-svg invert-on-dark">
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/nicholas-klein-castillanes-475482333/" target="_blank" class="contact-link">
+              <img src="images/SocialsLogos/linkedin.svg" alt="LinkedIn" class="contact-icon-svg invert-on-dark">
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://www.instagram.com/nchls.kln/" target="_blank" class="contact-link">
+              <img src="images/SocialsLogos/instagram.svg" alt="Instagram" class="contact-icon-svg invert-on-dark">
+              <span>Instagram</span>
+            </a>
+          </div>
         </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="socials">
-    <div class="socials-inner">
-      <a class="social-link" href="https://github.com/nchls-kln" target="_blank" aria-label="GitHub">
-        <img src="images/SocialsLogos/github.svg" alt="GitHub Logo" class="social-icon">
-      </a>
-      <a class="social-link" href="https://www.linkedin.com/in/nicholas-klein-castillanes-475482333/" target="_blank" aria-label="LinkedIn">
-        <img src="images/SocialsLogos/linkedin.svg" alt="LinkedIn Logo" class="social-icon">
-      </a>
-      <a class="social-link" href="https://www.instagram.com/nchls.kln/" target="_blank" aria-label="Instagram">
-        <img src="images/SocialsLogos/instagram.svg" alt="Instagram Logo" class="social-icon">
-      </a>
-      <a class="social-link email-link" href="mailto:kleincastillanes07@gmail.com">
-        kleincastillanes07@gmail.com
-      </a>
-    </div>
-  </footer>
+      </div>
+    </section>
+  </div>
 
   <script src="script.js"></script>
 </body>
