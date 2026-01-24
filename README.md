@@ -1,56 +1,44 @@
-# Portfolio - Nicholas Klein Castillanes
+# Portfolio – Nicholas Klein Castillanes
 
-A modern, professional portfolio website showcasing my journey as a Computer Science student and web developer.
+A modern, professional portfolio showcasing my growth, creativity, and journey as a Computer Science student and aspiring web developer.
 
-## 🚀 Features
+## Overview
 
-- **Modern Design**: Clean, professional layout with thoughtful typography and spacing
-- **Responsive**: Fully responsive design that works seamlessly across all devices
-- **Dark Mode**: Elegant dark mode toggle with smooth transitions
-- **Smooth Animations**: Subtle, refined animations that enhance the user experience
-- **Accessibility**: Built with accessibility best practices in mind
-- **Performance**: Optimized for fast loading and smooth interactions
+This website is designed to present who I am, what I’ve worked on, and how I approach building thoughtful digital experiences. It focuses on clarity, simplicity, and usability while reflecting my personal style and evolving skills.
 
-## 🛠️ Technologies Used
+## Key Highlights
 
-- **HTML5**: Semantic markup for better structure and SEO
-- **CSS3**: Modern styling with CSS Grid, Flexbox, and custom properties
-- **Vanilla JavaScript**: Interactive features and smooth scrolling
-- **Google Fonts (Inter)**: Professional typography
+- **Clean & Modern Design**  
+  A minimal, professional layout that emphasizes content, readability, and visual balance.
 
-## 📱 Sections
+- **Responsive Experience**  
+  Built to look and feel great on desktops, tablets, and mobile devices.
 
-- **Hero**: Introduction with profile image and key information
-- **About**: Personal background and technical skills
-- **Achievements**: Certifications and accomplishments
-- **Projects**: Showcase of featured web development projects
-- **Contact**: Professional contact information and social links
+- **Dark Mode Option**  
+  A polished dark mode for comfortable viewing in different environments.
 
-## 🎨 Design Philosophy
+- **Smooth Interactions**  
+  Subtle animations and transitions that make the site feel alive without being distracting.
 
-This portfolio embraces minimalism with:
-- Neutral color palette (black, white, grayscale)
-- Strong visual hierarchy and clean layout
-- Professional typography with the Inter font family
-- Subtle shadows, borders, and dividers
-- Smooth, unobtrusive animations
-- Mobile-first responsive design
+- **Accessibility-Focused**  
+  Designed with inclusivity in mind, ensuring the content is easy to navigate and understand.
 
-## 🚀 Getting Started
+- **Fast & Lightweight**  
+  Optimized for quick loading and smooth performance.
 
-1. Clone the repository
-2. Open `index.html` in your browser
-3. Toggle between light and dark modes using the theme button
-4. Navigate through sections using the fixed navigation
+## Sections
 
-## 📄 License
+- **Hero** – A brief introduction and first impression  
+- **About** – My background, interests, and skills  
+- **Achievements** – Milestones, certifications, and accomplishments  
+- **Projects** – Selected works that reflect my learning and creativity  
+- **Contact** – Ways to connect with me professionally
 
-This project is open source and available under the [MIT License](LICENSE).
+## Design Philosophy
 
-## 🤖 AI Declaration
+The portfolio follows a minimalist approach centered on:
 
-This portfolio website was designed and developed with the assistance of GitHub Copilot, an AI-powered coding assistant. The AI helped with code generation, and implementation of modern web development practices while maintaining the developer's creative vision and personal touch.
-
----
-
-*Built with ❤️ by Nicholas Klein Castillanes*
+- Neutral tones and a calm visual palette  
+- Clear structure and strong visual hierarchy  
+- Thoughtful spacing and typography  
+- Simple, intentional animations  
