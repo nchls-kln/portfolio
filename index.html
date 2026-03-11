@@ -18,13 +18,22 @@
         <div class="nav-brand">
           <img src="images/enkei-logo.png" alt="enkei logo" class="nav-logo invert-on-dark"> 
         </div>
-        <div class="nav-links">
+        <div class="nav-links" id="nav-links">
           <a href="#about" class="nav-link">About</a>
           <a href="#achievements" class="nav-link">Achievements</a>
           <a href="#projects" class="nav-link">Projects</a>
           <a href="#contact" class="nav-link">Contact</a>
+          <div class="mobile-theme-item">
+            <span class="mobile-theme-label">Theme</span>
+            <button class="theme-toggle mobile-theme-toggle" id="theme-toggle-mobile" data-theme-toggle aria-label="Toggle theme">
+              <span class="theme-icon">☀️</span>
+            </button>
+          </div>
         </div>
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <button class="nav-menu-toggle" id="nav-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+          <span class="nav-menu-icon">☰</span>
+        </button>
+        <button class="theme-toggle desktop-theme-toggle" id="theme-toggle" data-theme-toggle aria-label="Toggle theme">
           <span class="theme-icon">☀️</span>
         </button>
       </div>
@@ -96,7 +105,9 @@
             <div class="achievement-content">
               <h3 class="achievement-title">IT Specialist — Java</h3>
               <p class="achievement-description">IBM Certified Specialist in Java programming fundamentals</p>
-              <a href="images/java-cert.png" target="_blank" class="achievement-link">View Certificate →</a>
+              <button class="achievement-link" type="button" data-cert-src="images/java-cert.png" data-cert-alt="Java Certificate" data-cert-description="This certification verifies foundational Java programming skills, including core syntax, object-oriented principles, and practical problem-solving.">
+                View Certificate →
+              </button>
             </div>
           </div>
         </div>
@@ -108,6 +119,7 @@
       <div class="section-container">
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
+
           <article class="project-card">
             <div class="project-image">
               <img src="images/Projects/mapufind-preview.jpg" alt="MapuFind Preview" class="project-img">
@@ -229,6 +241,24 @@
               </div>
             </div>
           </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/Projects/feelvie-movie.png" alt="Feelvie Preview" class="project-img">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Feelvie</h3>
+              <p class="project-description">An AI-powered movie discovery experience that recommends films based on your current mood.</p>
+              <div class="project-tech">
+                <span class="tech-tag">AI</span>
+                <span class="tech-tag">Web App</span>
+              </div>
+              <div class="project-links">
+                <a href="https://castillanes-pacanan-webprog.vercel.app/" target="_blank" class="project-link">Live Demo</a>
+                <a href="https://github.com/kirkpacanan/Castillanes-Pacanan-Webprog" target="_blank" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -263,6 +293,22 @@
         </div>
       </div>
     </section>
+  </div>
+
+  <div class="certificate-modal" id="certificate-modal" aria-hidden="true">
+    <div class="certificate-modal-backdrop" data-close-modal></div>
+    <div class="certificate-modal-content" role="dialog" aria-modal="true" aria-labelledby="certificate-modal-title" aria-describedby="certificate-modal-description" tabindex="-1">
+      <div class="certificate-modal-header">
+        <div class="certificate-modal-title-wrap">
+          <h3 id="certificate-modal-title">Certificate Preview</h3>
+        </div>
+        <button class="certificate-modal-close" type="button" aria-label="Close certificate modal" data-close-modal>×</button>
+      </div>
+      <div class="certificate-modal-body">
+        <img id="certificate-modal-image" src="" alt="Certificate preview" class="certificate-modal-image">
+        <p id="certificate-modal-description" class="certificate-modal-description">This certification verifies key technical skills and practical knowledge in the corresponding domain.</p>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
